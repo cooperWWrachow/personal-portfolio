@@ -1,0 +1,288 @@
+/* General */
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Remnove unnecessary space in document*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition */
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESTOP NAV */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    /* 17vh == 17% */
+    height: 15vh;
+    background-color: black;
+    border-bottom-style: dashed;
+    border-bottom-width: 1rem;
+    border-bottom-color: white;
+}
+
+.nav-links {
+    gap: 2rem;
+    /* remove bullets */
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-decoration: black;
+}
+
+.nav-links a:hover {
+    color: #E60C05;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #F74C46;
+}
+
+.logo {
+    color: #E60C05;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background: linear-gradient(90deg, red, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+/* hides by default based on screen size */
+#mobile-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* adjust the length size */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Show span lines */
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+
+/* Opens up the actual menu */
+.menu-links.open {
+    max-height: 300px;
+}
+
+/* conatiner of links */
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    
+}
+
+.menu-links li {
+    /* removes bullets */
+    list-style: none;
+}
+
+.menu-links a:hover {
+    color: #E60C05;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #F74C46;
+}
+
+/* Hambuger menu transformation */
+/* when clicked, turns into X */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px,5px);
+}
+/* hide 2nd span line */
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+/* Resets when closed by resetting previous transformation then making span 2 visible again */
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* applies to all sections throughout page */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    /* ensures no overlappinbg */
+    min-height: fit-content;
+}
+
+
+/* ABOUT SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 80vh;
+}
+
+.main-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    /* Makes image circular */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* center with picture */
+.about-text {
+    align-self: center;
+    text-align: center;
+}
+
+.p1-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #525252;
+}
+
+.p2-text {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #525252;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: #E60C05;
+}
+
+/* Adjust socilas and resize icons below */
+.socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* targets icons (ie, github, linkedIn, etc */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* btn customizations */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* targets both buttons (things they share) */
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    /* gives soft corners appeal */
+    border-radius: 2rem;
+}
+
+.btn-1,
+.btn-2 {
+    border: #E60C05 0.1rem solid;
+    cursor: pointer;
+}
+
+.btn-1,
+.btn-2:hover {
+    background: #E60C05;
+    color: white;
+}
+
+.btn-1:hover {
+    background: #8b0803;
+}
+
+.btn-2 {
+    background: none;
+}
+
+.btn-2:hover {
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+
+
+    
+
+/* .about-text {
+    display: flex;
+} */

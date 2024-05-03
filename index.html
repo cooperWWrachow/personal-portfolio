@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper Rachow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileviews.css">
+</head>
+<body>
+    <!-- NAVBAR (DESKTOP) -->
+    <nav id="desktop-nav">
+        <div class="logo">Cooper Rachow</div>
+        <!-- list of links -->
+        <div>
+            <ul class="nav-links">
+                <!-- Section Titles -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#surprise">Surprise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-nav">
+        <div class="logo">Cooper Rachow</div>
+        <div class="hamburger-menu">
+            <!-- When icon is clicked, call js function -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <!-- span is the 3 lines in the menu -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- list of links -->
+            <div class="menu-links">
+                <!-- Section Titles -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#surprise">Surprise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </div>       
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <!-- Picture container -->
+        <div class="main-pic-container">
+            <img src="./images/profile-pic-1.jpg" alt="Profile Picture">
+        </div>
+        <!-- Content container -->
+        <div class="about-text">   
+            <p class="p1-text">Hello, I'm</p>
+            <h1 class="title">Cooper Rachow</h1>
+            <p class="p2-text">Software Developer</p>
+            <!-- Holds Both buttons -->
+            <div class="btn-container">
+                <button class="btn btn-1" onclick="location.href='./#about'">
+                    Learn More
+                </button>
+                <button class="btn btn-2" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <!-- Socials Container -->
+            <div class="socials-container">
+                <!-- _blank opens up link in new tab -->
+                <a href="https://www.linkedin.com/in/cooper-rachow/" target="_blank">
+                    <img src="./images/linkedin.png" alt="LinkedIn Profile" class="icon">
+                </a>
+                <a href="https://github.com/cooperWWrachow" target="_blank">
+                    <img src="./images/github.png" alt="Github Profile" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <p class="black-p1">Get To Know More</p>
+        <h1 class="black-title">About Me</h1>
+        <div class="about-container">
+            <!-- Picture container -->
+            <div class="about-pic-container">
+                <img src="./images/profile-pic-2.jpg" alt="Profile Picture 2">
+            </div>
+            <!-- holds ALL details -->
+            <div class="about-details-container">
+                <!-- holds experience and school bubbles -->
+                <div class="specifics-container">
+                    <div class="details-container">
+                        <h3>Experience</h3>
+                        <p>Software Developer Intern <br>General Dynamics Information Technology</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p>Bachelor's in Computer Science <br>Big Data & Cloud Computing</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Currently, I am finishing up my degree in Computer Science at Louisiana Tech University.
+                        For the last few years, I have been thrown into several programming languages, my favorites being 
+                        Python and Javascript, which has only increased my work ethic and ability to complete any given task 
+                        with only the best efforts. I am a passionate individual who is willing to learn at all times and accept 
+                        any contructive criticism. I love traveling and all things pertaining to the outdoors. My favorite TV show 
+                        is, without a doubt, Breaking Bad. Thanks!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
