@@ -20,6 +20,81 @@ html {
     scroll-behavior: smooth;
 }
 
+/* All cube animation is applie to entire document that doesnt 
+have a background color */
+.cubes span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	box-shadow: 0 0 50px #E60C05, 0 0 100px #E60C05, 0 0 150px #E60C05, 0 0 200px #E60C05;
+	animation: animate 6s linear infinite;
+}
+.cubes span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.cubes span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.cubes span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.cubes span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.cubes span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.cubes span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.cubes span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.cubes span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+}
+.cubes span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.cubes span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
 /* TRANSITION */
 
 /* Makes color change when hovering smoother */
@@ -180,11 +255,7 @@ section {
     box-sizing: border-box;
     /* ensures no overlappinbg */
     min-height: fit-content;
-}
-
-.section-container {
-    display: flex;
-    margin: 0 10rem;
+    
 }
 
 /* PROFILE SECTION */
@@ -212,11 +283,6 @@ section {
     align-self: center;
     text-align: center
 }
-
-/* applies to all p's */
-/* .section_text p {
-    
-} */
 
 .section_text_p1 {
     text-align: center;
@@ -321,7 +387,10 @@ section {
 .section-container {
     gap: 4rem;
     height: 80%;
+    display: flex;
+    margin: 0 10rem;
 }
+
 
 .about-details-container {
     justify-content: center;
@@ -356,6 +425,12 @@ section {
     100%{
        background-position: 0% 50%; 
     }
+}
+
+.experience-symbols {
+    text-decoration: none;
+    color: #CDA204;
+    font-size: 35px;
 }
 
 .details-container h3 {
@@ -466,6 +541,10 @@ section {
     font-size: 40px;
     font-weight: 600;
     color: #CDA204;
+}
+
+.symbol h3:hover {
+    cursor: default;
 }
 
 article .icon {
@@ -609,6 +688,10 @@ article .icon {
 
 .email-icon {
     font-size: 47px;
+}
+
+.email-icon:hover {
+    cursor: default;
 }
 
 /* FOOTER */
