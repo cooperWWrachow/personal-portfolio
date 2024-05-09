@@ -37,9 +37,14 @@ can check by inspecting and dragging page*/
       height: fit-content;
     }
     section {
-      margin: 0 5%;
+      margin: 0;
     }
     .section_pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .section_pic-container2 {
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
@@ -93,6 +98,12 @@ can check by inspecting and dragging page*/
       height: 46vw;
       justify-content: center;
     }
+    .section_pic-container2 {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    
     .section_text_p2 {
       font-size: 1.25rem;
     }
