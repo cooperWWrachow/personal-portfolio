@@ -14,6 +14,22 @@
     #surprise h1 {
       padding-top: 1rem;
     }
+
+    .experience-sub-title {
+      font-weight: 600;
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+
+    .skill h3 {
+      font-size: 15px;
+    }
+    
+    .symbol h3 {
+        font-size: 40px;
+        cursor: default;
+    }
+    
   }
 
 /* this checks screen size. If screen size if less than 1200px -> hide desktop nav 

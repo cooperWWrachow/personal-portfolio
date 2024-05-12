@@ -548,15 +548,9 @@ section {
     font-size: 50px;
     font-weight: 600;
     color: #CDA204;
-}
-
-.symbol h3:hover {
     cursor: default;
 }
 
-article .icon {
-    cursor: default;
-}
 
 .blk-arrow {
     position: absolute;
