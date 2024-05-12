@@ -27,9 +27,11 @@ can check by inspecting and dragging page*/
     }
     #profile,
     .section-container {
-      display: block;
+      padding: 5rem;
+      display:block;
     }
-    .arrow {
+
+    .arrow, .blk-arrow {
       display: none;
     }
     section,
@@ -45,12 +47,24 @@ can check by inspecting and dragging page*/
       margin: 0 auto 2rem;
     }
     .section_pic-container2 {
-      width: 275px;
-      height: 275px;
+      width: 250px;
+      height: 250px;
       margin: 0 auto 2rem;
+      padding-left: 1.5rem;
+      /* padding-top: 1r; */
     }
     .about-containers {
       margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 790px) {
+    .section-container{
+      margin: 0;
+    }
+
+    .experience-details-container{
+      margin: 5rem;
     }
   }
 
@@ -63,6 +77,7 @@ can check by inspecting and dragging page*/
       height: 83vh;
       margin-bottom: 0;
     }
+
     article {
       font-size: 1rem;
     }
@@ -70,14 +85,28 @@ can check by inspecting and dragging page*/
       height: fit-content;
       margin-bottom: 2rem;
     }
+    
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
     }
+
+    .section-container{
+      margin: 0;
+    }
+
+    .experience-details-container{
+      margin: 5rem;
+    }
+
+    .about-details-container{
+      margin: 0 auto;
+    }
     .contact-info-container {
       margin: 0;
     }
+
     .contact-info-container p,
     .nav-links li a {
       font-size: 1rem;
@@ -94,14 +123,14 @@ can check by inspecting and dragging page*/
       text-align: center;
     }
     .section_pic-container {
-      width: auto;
-      height: 46vw;
       justify-content: center;
+      /* height: 46vw; */
+      width: auto;
     }
     .section_pic-container2 {
       width: auto;
-      height: 46vw;
       justify-content: center;
+      padding-right: 1.5rem;
     }
     
     .section_text_p2 {
@@ -111,6 +140,6 @@ can check by inspecting and dragging page*/
       font-size: 2rem;
     }
     .text-container {
-      text-align: justify;
+      text-align: center;
     }
   }
