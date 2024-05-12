@@ -480,11 +480,11 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 2rem 10rem;
+    margin: 5rem 10rem;
 }
 
 #experience .experience-details-container {
-    margin: 5rem 10rem;
+    margin: 10rem 10rem;
 }
 
 .skills-container {
@@ -513,7 +513,7 @@ section {
 .experience-sub-title {
     color: rgb(175, 175, 175);
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 40px;
     margin-bottom: 2rem;
 }
 
@@ -540,10 +540,11 @@ section {
 
 .skill h3 {
     color: white;
+    font-size: 20px;
 }
 
 .symbol h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     color: #CDA204;
 }

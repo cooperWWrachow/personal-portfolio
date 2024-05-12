@@ -90,14 +90,18 @@ can check by inspecting and dragging page*/
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
+      /* margin: 0; */
+
     }
 
     .section-container{
       margin: 0;
     }
 
-    .experience-details-container{
-      margin: 5rem;
+
+    #experience .experience-details-container{
+      margin: 2rem 4rem;
+
     }
 
     .about-details-container{
@@ -112,7 +116,7 @@ can check by inspecting and dragging page*/
       font-size: 1rem;
     }
     .experience-sub-title {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     .logo {
       font-size: 1.5rem;
@@ -185,4 +189,25 @@ can check by inspecting and dragging page*/
       margin: 0;
       padding: 0;
     }
+  }
+
+  @media screen and (max-width: 1200px) and (max-height: 715px) {
+    #profile h1 {
+      font-size: 30px;
+    }
+
+    #profile {
+      padding-top: 1rem;
+    }
+
+    #profile .section_text_p2 {
+      font-size: 27px;
+    }
+
+    .section_pic-container {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 2rem;
+    }
+
   }
