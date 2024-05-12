@@ -10,6 +10,10 @@
     #projects {
       height: fit-content;
     }
+
+    #surprise h1 {
+      padding-top: 1rem;
+    }
   }
 
 /* this checks screen size. If screen size if less than 1200px -> hide desktop nav 
@@ -30,6 +34,7 @@ can check by inspecting and dragging page*/
       padding: 5rem;
       display:block;
     }
+
 
     .arrow, .blk-arrow {
       display: none;
@@ -66,6 +71,7 @@ can check by inspecting and dragging page*/
     .experience-details-container{
       margin: 5rem;
     }
+
   }
 
   @media screen and (max-width: 600px) {
@@ -150,7 +156,7 @@ can check by inspecting and dragging page*/
 
   @media screen and (max-height: 730px) {
 
-    #surprise h1,  #about h1,#experience h1,#projects h1,#contact h1{
+    #about h1,#experience h1,#projects h1,#contact h1{
       padding-top: 2rem;
       font-size: 40px;
     }
@@ -188,6 +194,11 @@ can check by inspecting and dragging page*/
       height: 3rem;
       margin: 0;
       padding: 0;
+    }
+
+    #surprise h1 {
+      padding-top: 0;
+      font-size: 40px;
     }
   }
 
