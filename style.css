@@ -387,7 +387,7 @@ section {
 
 .section-container {
     gap: 4rem;
-    height: 80%;
+    height: 75%;
     display: flex;
     margin: 0 10rem;
 }
@@ -403,7 +403,6 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     display: flex;
-    margin-top: 2rem;
 }
 
 .details-container {
@@ -481,6 +480,10 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 2rem 10rem;
+}
+
+#experience .experience-details-container {
     margin: 5rem 10rem;
 }
 
@@ -643,6 +646,10 @@ article .icon {
     text-decoration: underline overline black;
     text-underline-offset: 1rem;
 }
+
+/* #surpise .experience-details-container {
+    margin: 2rem 10rem;
+} */
 
 .weather-prompt {
     padding-top: 3rem;

@@ -143,3 +143,46 @@ can check by inspecting and dragging page*/
       text-align: center;
     }
   }
+
+  @media screen and (max-height: 730px) {
+
+    #surprise h1,  #about h1,#experience h1,#projects h1,#contact h1{
+      padding-top: 2rem;
+      font-size: 40px;
+    }
+
+    .experience-symbols {
+      display: none;
+    }
+
+    .section_pic-container2 {
+      height: 300px;
+    }
+
+    .article-container {
+      gap: 1rem;
+    }
+
+    .weather-prompt p {
+      font-size: 17px;
+    }
+
+    .weather-container h2{
+      font-size: 17px;
+    }
+
+    .weather-container p {
+      font-size: 15px;
+    }
+
+    .weather-container h3 {
+      font-size: 20px;
+    }
+
+    .weather-btn {
+      width: 4rem;
+      height: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
