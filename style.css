@@ -351,6 +351,7 @@ section {
 
 .btn-2 {
     background: none;
+    color: black;
 }
 
 .btn-2:hover {
@@ -690,7 +691,7 @@ article .icon {
     font-size: 25px;
 }
 
-.my-weather, .their-weather {
+.weather-btn {
     background-color: white;
     width: 6rem;
     color: black;
@@ -699,7 +700,7 @@ article .icon {
     border: none;
 }
 
-.my-weather:hover, .their-weather:hover {
+.weather-btn:hover {
     background-color: grey;
     cursor: pointer;
     color: white;
@@ -783,6 +784,7 @@ article .icon {
 
 .email-icon {
     font-size: 47px;
+    color: black;
 }
 
 /* .email-icon:hover {
